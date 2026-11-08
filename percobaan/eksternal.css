@@ -1,0 +1,33 @@
+/* File: eksternal.css - Metode 1: Linking (External CSS) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    margin: 0;
+    padding: 20px;
+}
+
+.card-panel {
+    max-width: 760px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08);
+}
+
+.header-eksternal {
+    color: #0369a1;
+    font-size: 22px;
+    border-bottom: 2px solid #0284c7;
+    padding-bottom: 8px;
+    margin-top: 0;
+}
+
+.teks-deskripsi {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #475569;
+}
+
