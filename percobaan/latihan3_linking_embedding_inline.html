@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Percobaan 3: Tiga Metode Penggunaan CSS</title>
+    
+    <!-- 1. METODE LINKING (EXTERNAL CSS) -->
+    <link rel="stylesheet" href="eksternal.css">
+
+    <!-- 2. METODE EMBEDDING (INTERNAL CSS) -->
+    <style type="text/css">
+        .badge-embedding {
+            background-color: #dbeafe;
+            color: #1e40af;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+
+        .highlight-box {
+            background-color: #f0fdf4;
+            border: 2px solid #22c55e;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+            font-size: 13.5px;
+            color: #15803d;
+        }
+
+        .table-perbandingan {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            font-size: 13px;
+        }
+
+        .table-perbandingan th, .table-perbandingan td {
+            border: 1px solid #cbd5e1;
+            padding: 8px 12px;
+            text-align: left;
+        }
+
+        .table-perbandingan th {
+            background-color: #f1f5f9;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-panel">
+        <span class="badge-embedding">[Metode Embedding] Internal CSS Aktif</span>
+        <h1 class="header-eksternal">[Metode Linking] Integrasi Arsitektur Tiga Tingkat CSS</h1>
+        
+        <p class="teks-deskripsi">
+            Halaman ini mendemonstrasikan bagaimana sebuah dokumen HTML dapat memanfaatkan tiga tingkatan penulisan CSS sekaligus secara harmonis: <strong>Linking</strong> untuk standarisasi layout global, <strong>Embedding</strong> untuk pengaturan spesifik halaman, dan <strong>Inline</strong> untuk sentuhan khusus elemen individual.
+        </p>
+
+        <!-- 3. METODE INLINE CSS (PADA BEBERAPA ELEMEN SPESIFIK) -->
+        <div style="background-color: #fffbeb; border-left: 5px solid #f59e0b; padding: 12px 18px; margin: 15px 0;">
+            <strong style="color: #b45309; font-size: 14px;">[Metode Inline]: Catatan Prioritas CSS</strong>
+            <p style="margin: 4px 0 0 0; font-size: 13px; color: #78350f; font-style: italic;">
+                Aturan Inline CSS memiliki tingkat spesifisitas tertinggi dan akan mengesampingkan (override) aturan yang didefinisikan pada Internal maupun External CSS jika terjadi konflik selector.
+            </p>
+        </div>
+
+        <div class="highlight-box">
+            <strong>Implementasi Praktikum Modul 11:</strong><br>
+            Telah berhasil menghubungkan berkas <code>eksternal.css</code>, menyisipkan blok <code>&lt;style&gt;</code> di bagian <code>&lt;head&gt;</code>, dan menyematkan atribut <code>style=""</code> langsung pada tag HTML.
+        </div>
+
+        <table class="table-perbandingan">
+            <thead>
+                <tr>
+                    <th>Metode CSS</th>
+                    <th>Lokasi Penulisan</th>
+                    <th>Kelebihan Utama</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Linking</strong></td>
+                    <td>Berkas berekstensi <code>.css</code> terpisah</td>
+                    <td>Konsistensi tampilan multi-halaman &amp; hemat bandwidth (caching).</td>
+                </tr>
+                <tr>
+                    <td><strong>Embedding</strong></td>
+                    <td>Tag <code>&lt;style&gt;</code> di dalam <code>&lt;head&gt;</code></td>
+                    <td>Ideal untuk styling eksklusif yang hanya ada pada satu halaman.</td>
+                </tr>
+                <tr>
+                    <td><strong>Inline</strong></td>
+                    <td>Atribut <code>style=""</code> pada tag elemen</td>
+                    <td>Sangat cepat untuk pengujian kilat &amp; override lokal spesifik.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Elemen Inline Tambahan -->
+        <p style="text-align: right; font-size: 12px; color: #94a3b8; margin-top: 20px;">
+            Praktikan: <span style="font-weight: bold; color: #0284c7;">Hadi Sulaiman (NIM: 241011402572)</span>
+        </p>
+    </div>
+
+</body>
+</html>
+
