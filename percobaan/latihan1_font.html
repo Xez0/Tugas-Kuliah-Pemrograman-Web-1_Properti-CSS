@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Percobaan 1: Pengaturan Tipografi & Teks CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+            padding: 30px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 25px 35px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+
+        /* Heading Utama: Menggunakan Shorthand font */
+        h1.judul-artikel {
+            font: italic bold 28px "Times New Roman", Georgia, serif;
+            color: #1e3a8a;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        /* Sub-judul: font-family Arial, font-weight medium, font-size medium */
+        h2.sub-judul {
+            font-family: Arial, sans-serif;
+            font-weight: normal;
+            font-size: 15px;
+            color: #64748b;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 12px;
+        }
+
+        /* Paragraf 1: Perataan Kiri (text-align: left) */
+        p.paragraf-kiri {
+            font-family: "Segoe UI", Tahoma, sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+            text-align: left;
+            color: #334155;
+        }
+
+        /* Paragraf 2: Perataan Justify (text-align: justify) dengan variasi font-style & font-weight */
+        p.paragraf-justify {
+            font-family: "Georgia", serif;
+            font-size: 14.5px;
+            line-height: 1.7;
+            text-align: justify;
+            color: #1e293b;
+        }
+
+        /* Penekanan Istilah Khusus */
+        .istilah-tebal {
+            font-weight: bold;
+            color: #0369a1;
+        }
+
+        .istilah-miring {
+            font-style: italic;
+            color: #475569;
+        }
+
+        /* Paragraf 3: Perataan Kanan (text-align: right) untuk sumber kutipan */
+        p.sumber-kutipan {
+            font-style: italic;
+            font-weight: 500;
+            font-size: 12.5px;
+            text-align: right;
+            color: #64748b;
+            margin-top: 20px;
+        }
+
+        /* Kotak Catatan: Font Monospace */
+        .kotak-catatan {
+            font-family: "Courier New", monospace;
+            font-size: 12px;
+            background: #f1f5f9;
+            padding: 12px 16px;
+            border-left: 4px solid #0284c7;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="judul-artikel">Evolusi Standar Tipografi dalam Desain Web Modern</h1>
+        <h2 class="sub-judul">Praktikum Pemrograman Web 1 - Modul XI: Atribut Font &amp; Text Styling</h2>
+
+        <p class="paragraf-kiri">
+            <span class="istilah-tebal">Cascading Style Sheets (CSS)</span> memberikan kendali penuh terhadap pemformatan tipografi halaman web. Melalui atribut <code>font-size</code>, pengembang dapat mendefinisikan skala hierarki visual secara presisi menggunakan satuan poin, pixel, maupun skala persentase. Penentuan jenis huruf melalui <code>font-family</code> menjamin fleksibilitas tampilan antar sistem operasi yang berbeda.
+        </p>
+
+        <p class="paragraf-justify">
+            Penggunaan atribut <span class="istilah-tebal">font-weight</span> memungkinkan pembedaan bobot antara teks judul yang tegas (bold) dengan paragraf isi yang nyaman dibaca (normal). Dipadukan dengan atribut <span class="istilah-miring">font-style: italic</span>, desainer dapat memberikan aksentuasi pada kutipan maupun istilah ilmiah. Perataan teks (<code>text-align</code>) memegang peranan krusial dalam kenyamanan membaca dokumen digital yang panjang.
+        </p>
+
+        <div class="kotak-catatan">
+            [Sintaks Shorthand]: H1 { font: italic bold 28px "Times New Roman", Georgia, serif; }
+        </div>
+
+        <p class="sumber-kutipan">
+            - Disusun oleh: Hadi Sulaiman (NIM: 241011402572), Kelas 05TPLM003
+        </p>
+    </div>
+
+</body>
+</html>
+
