@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NusantaraVenture - Jelajah Pesona Wisata Indonesia</title>
+    <!-- EXTERNAL CSS (LINKING) - Syarat Wajib Tugas -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Bar Informasi Identitas Mahasiswa UNPAM -->
+    <div class="identitas-bar">
+        <div class="container identitas-content">
+            <div>
+                <strong>Praktikum Pemrograman Web 1</strong> | Tugas Implementasi CSS (NIM: 241011402572)
+            </div>
+            <div>
+                Mahasiswa: <strong>Hadi Sulaiman</strong> | Kelas: <strong>05TPLM003</strong> | Tema: <strong>Travel Wisata (Layout Dua Kolom)</strong>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigasi Utama -->
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <div class="brand-nama">
+                ✈ NusantaraVenture
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Beranda</a></li>
+                <li><a href="destinasi.html">Galeri Destinasi</a></li>
+                <li><a href="kontak.html">Kontak &amp; Booking</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Konten Utama dengan Layout Dua Kolom -->
+    <main class="container layout-dua-kolom">
+
+        <!-- ================= KOLOM UTAMA (KIRI) ================= -->
+        <div class="kolom-utama">
+
+            <!-- Hero Banner -->
+            <section class="hero-banner" style="background-image: url('images/hero-marine.jpg');">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <!-- INLINE CSS ELEMEN #1: Badge Promo Spesial -->
+                    <span style="background-color: #fef08a; color: #854d0e; padding: 4px 12px; border-radius: 20px; font-weight: 700; font-size: 11px; display: inline-block; margin-bottom: 10px;">
+                        ★ PROMO LIBURAN AKHIR TAHUN 2026
+                    </span>
+                    <!-- Judul Utama (font-size: 25px sesuai Digit ke-1: 5 * 5px) -->
+                    <h1 class="judul-utama" style="color: #ffffff;">Jelajahi Surga Bahari dan Pegunungan Nusantara</h1>
+                    <p class="tagline-italic font-sistem-bersih">
+                        "Menghadirkan pengalaman perjalanan tak terlupakan ke pelosok alam terindah Indonesia dengan kenyamanan premium."
+                    </p>
+                    <a href="destinasi.html" class="btn-aksi">Lihat Semua Destinasi &rarr;</a>
+                </div>
+            </section>
+
+            <!-- Seksi Pengantar / Artikel Wisata -->
+            <section class="widget-box seksi-margin">
+                <h2 class="judul-seksi">Pesona Alam yang Memikat Hati</h2>
+                <!-- Perataan Teks Khusus #1: Text Justify -->
+                <p class="text-justify-khusus font-sans-modern" style="margin-bottom: 15px;">
+                    Indonesia dianugerahi kekayaan alam kepulauan yang tiada duanya di dunia. Dari kejernihan terumbu karang Raja Ampat yang menjadi episentrum keanekaragaman hayati laut dunia, hingga matahari terbit magis di kaldera Gunung Bromo Jawa Timur. NusantaraVenture mendampingi setiap langkah petualangan Anda dengan paket wisata terencana, didampingi pemandu lokal berlisensi dan fasilitas hotel berbintang.
+                </p>
+
+                <!-- Elemen Italic #3: Kutipan Wisatawan -->
+                <div class="quote-italic">
+                    "Perjalanan bukan sekadar berpindah tempat, melainkan cara kita menemukan sudut pandang baru dan menghargai keagungan semesta."
+                </div>
+                <!-- Elemen Italic #4: Catatan Khusus Perjalanan -->
+                <p class="catatan-italic text-right-khusus">
+                    * Catatan: Seluruh paket wisata kami menerapkan protokol keamanan maritim berstandar internasional.
+                </p>
+            </section>
+
+            <!-- TANTANGAN TUGAS: GALERI DESTINASI UNGGULAN -->
+            <section class="seksi-margin">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                    <h2 class="judul-seksi" style="margin-bottom: 0;">Galeri Destinasi Pilihan</h2>
+                    <!-- INLINE CSS ELEMEN #2: Tag Diskon Khusus -->
+                    <span style="color: #0284c7; font-weight: 700; font-size: 12px; border: 1px solid #0284c7; padding: 2px 8px; border-radius: 4px;">
+                        Terverifikasi 100%
+                    </span>
+                </div>
+
+                <div class="galeri-grid">
+                    <!-- Kartu Destinasi 1 -->
+                    <article class="kartu-destinasi border-utama-solid">
+                        <div class="destinasi-img-wrap">
+                            <img src="images/raja-ampat.jpg" alt="Raja Ampat Papua Barat" class="destinasi-img">
+                            <span class="destinasi-badge">Bahari</span>
+                        </div>
+                        <div class="destinasi-body">
+                            <h3 class="destinasi-nama">Kepulauan Raja Ampat</h3>
+                            <!-- Elemen Italic #2: Lokasi Geografis -->
+                            <p class="lokasi-italic teks-kecil">&#128205; Papua Barat Daya</p>
+                            <p class="teks-kecil font-sans-modern" style="margin: 8px 0;">
+                                Gugusan pulau karang eksotis dengan kejernihan air laut kristal dan biota laut terlengkap.
+                            </p>
+                            <div class="destinasi-footer">
+                                <span class="harga-angka">Rp 6.850.000</span>
+                                <a href="kontak.html" class="btn-aksi" style="padding: 4px 10px; font-size: 12px;">Pesan</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Kartu Destinasi 2 -->
+                    <article class="kartu-destinasi">
+                        <div class="destinasi-img-wrap">
+                            <img src="images/labuan-bajo.jpg" alt="Labuan Bajo Komodo" class="destinasi-img">
+                            <span class="destinasi-badge">Petualangan</span>
+                        </div>
+                        <div class="destinasi-body">
+                            <h3 class="destinasi-nama">Labuan Bajo &amp; Komodo</h3>
+                            <p class="lokasi-italic teks-kecil">&#128205; Nusa Tenggara Timur</p>
+                            <p class="teks-kecil font-sans-modern" style="margin: 8px 0;">
+                                Pelayaran liveaboard mewah menyusuri Pulau Padar, Pink Beach, dan habitat asli Komodo.
+                            </p>
+                            <div class="destinasi-footer">
+                                <span class="harga-angka">Rp 4.950.000</span>
+                                <a href="kontak.html" class="btn-aksi" style="padding: 4px 10px; font-size: 12px;">Pesan</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Kartu Destinasi 3 -->
+                    <article class="kartu-destinasi">
+                        <div class="destinasi-img-wrap">
+                            <img src="images/bromo.jpg" alt="Gunung Bromo Tengger" class="destinasi-img">
+                            <span class="destinasi-badge">Pegunungan</span>
+                        </div>
+                        <div class="destinasi-body">
+                            <h3 class="destinasi-nama">Kaldera Gunung Bromo</h3>
+                            <p class="lokasi-italic teks-kecil">&#128205; Jawa Timur</p>
+                            <p class="teks-kecil font-sans-modern" style="margin: 8px 0;">
+                                Sensasi berkendara jeep 4x4 menyusuri lautan pasir berbisik dan menikmati sunrise Penanjakan.
+                            </p>
+                            <div class="destinasi-footer">
+                                <span class="harga-angka">Rp 1.450.000</span>
+                                <a href="kontak.html" class="btn-aksi" style="padding: 4px 10px; font-size: 12px;">Pesan</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Kartu Destinasi 4 -->
+                    <article class="kartu-destinasi">
+                        <div class="destinasi-img-wrap">
+                            <img src="images/nusa-penida.jpg" alt="Nusa Penida Kelingking Beach" class="destinasi-img">
+                            <span class="destinasi-badge">Pantai</span>
+                        </div>
+                        <div class="destinasi-body">
+                            <h3 class="destinasi-nama">T-Rex Cliff Nusa Penida</h3>
+                            <p class="lokasi-italic teks-kecil">&#128205; Bali</p>
+                            <p class="teks-kecil font-sans-modern" style="margin: 8px 0;">
+                                Tebing Kelingking yang megah menyerupai dinosaurus dengan deburan ombak samudra biru.
+                            </p>
+                            <div class="destinasi-footer">
+                                <span class="harga-angka">Rp 1.250.000</span>
+                                <a href="kontak.html" class="btn-aksi" style="padding: 4px 10px; font-size: 12px;">Pesan</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- ================= KOLOM SIDEBAR (KANAN) ================= -->
+        <aside class="kolom-sidebar">
+
+            <!-- Widget 1: Voucher Diskon (Border Dashed 2px sesuai Digit ke-2) -->
+            <div class="border-promo-dashed">
+                <span class="teks-kecil font-kode-voucher" style="color: #0d9488; font-weight: 700;">KODE VOUCHER HEMAT</span>
+                <h3 style="font-size: 16px; margin: 6px 0; color: #0f172a;">Diskon Mahasiswa 15%</h3>
+                <p class="teks-kecil" style="margin-bottom: 10px;">
+                    Gunakan kode kupon di bawah saat melakukan konfirmasi pesanan:
+                </p>
+                <!-- Elemen Perataan Khusus #2: Text Center -->
+                <div class="text-center-khusus font-kode-voucher" style="background: #ffffff; padding: 8px; border: 1px dashed #0d9488; border-radius: 4px; font-weight: 700; color: #0d9488;">
+                    UNPAM-WEB1-2026
+                </div>
+                <!-- Elemen Italic #6: Keterangan Fasilitas / Term -->
+                <p class="fasilitas-italic text-center-khusus" style="margin-top: 6px;">
+                    * Berlaku khusus pemilik kartu mahasiswa aktif.
+                </p>
+            </div>
+
+            <!-- Widget 2: Testimoni Wisatawan -->
+            <div class="widget-box">
+                <h3 style="font-size: 15px; margin-bottom: 10px; border-bottom: 2px solid var(--border-color); padding-bottom: 6px;">
+                    Testimoni Wisatawan
+                </h3>
+                <!-- Elemen Italic #5: Testimoni Pengunjung -->
+                <p class="testimoni-italic teks-kecil" style="margin-bottom: 6px;">
+                    "Pelayanan luar biasa rapi! Pemandu lokal di Labuan Bajo sangat menguasai spot foto terbaik dan jadwalnya tepat waktu."
+                </p>
+                <!-- Elemen Italic #8: Status Review & Pengulas -->
+                <p class="review-waktu-italic">
+                    - Rian Pratama, Wisatawan Jakarta (Trip Oktober 2026)
+                </p>
+            </div>
+
+            <!-- Widget 3: Info Hotline & Layanan Cepat -->
+            <div class="border-info-dotted">
+                <h3 style="font-size: 14px; color: #b45309; margin-bottom: 6px;">
+                    &#9742; Layanan Konsultasi 24/7
+                </h3>
+                <p class="teks-kecil font-sistem-bersih" style="margin-bottom: 8px;">
+                    Butuh rancangan rencana perjalanan kustom (custom itinerary) untuk rombongan atau keluarga?
+                </p>
+                <a href="kontak.html" class="btn-aksi" style="background: #d97706; width: 100%; text-align: center;">
+                    Hubungi Customer Service
+                </a>
+            </div>
+
+            <!-- Widget 4: Rekap Nilai Implementasi CSS Mahasiswa -->
+            <div class="widget-box" style="background: #f1f5f9; font-size: 11.5px;">
+                <strong style="color: #1e293b;">Checklist Ketentuan NIM 241011402572:</strong>
+                <ul style="padding-left: 15px; margin-top: 6px; line-height: 1.5; color: #475569;">
+                    <li>Digit Akhir: 2 (Travel Wisata, 2 Kolom, Galeri)</li>
+                    <li>Digit 1: 5 * 5 = 25px (Font Judul &amp; Margin)</li>
+                    <li>Digit 2: 2px Border &amp; 2 Variasi Font Tambahan</li>
+                    <li>Digit 3: 5 Elemen Bold Terpenuhi</li>
+                    <li>Digit 4: 7 Elemen Italic Terpenuhi</li>
+                    <li>Digit 5: 2 Elemen Perataan Khusus Terpenuhi</li>
+                </ul>
+            </div>
+
+        </aside>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+                <div style="max-width: 400px;">
+                    <div class="brand-nama" style="color: #38bdf8; margin-bottom: 8px;">NusantaraVenture</div>
+                    <!-- Elemen Italic #7: Motto Footer -->
+                    <p class="footer-motto-italic teks-kecil">
+                        "Sahabat terbaik dalam setiap langkah menjelajahi keindahan bumi pertiwi."
+                    </p>
+                </div>
+                <div>
+                    <h4 style="color: #ffffff; margin-bottom: 8px; font-size: 13px;">Menu Cepat</h4>
+                    <p class="teks-kecil"><a href="index.html" style="color: #94a3b8; text-decoration: none;">Beranda Utama</a></p>
+                    <p class="teks-kecil"><a href="destinasi.html" style="color: #94a3b8; text-decoration: none;">Galeri Destinasi</a></p>
+                    <p class="teks-kecil"><a href="kontak.html" style="color: #94a3b8; text-decoration: none;">Kontak &amp; Reservasi</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 NusantaraVenture - Tugas Pemrograman Web 1 | Dikembangkan oleh <strong>Hadi Sulaiman (NIM: 241011402572)</strong> Kelas 05TPLM003 Universitas Pamulang.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
