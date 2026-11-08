@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog & Galeri Destinasi - NusantaraVenture</title>
+    <!-- EXTERNAL CSS (LINKING) - Syarat Wajib Tugas -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- INTERNAL CSS (EMBEDDING) - Syarat Wajib Tugas: Menggunakan tag <style> di head -->
+    <style>
+        /* Gaya Internal Khusus untuk Halaman Galeri Destinasi */
+        .filter-kategori-container {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            padding: 12px;
+            background: #ffffff;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .filter-btn {
+            padding: 6px 14px;
+            font-size: 12px;
+            border-radius: 20px;
+            border: 1px solid #cbd5e1;
+            background: #f8fafc;
+            color: #334155;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--primary-color);
+            color: #ffffff;
+            border-color: var(--primary-color);
+        }
+
+        .destinasi-grid-lengkap {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .rating-bintang {
+            color: #eab308;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .fasilitas-tags {
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+            margin-top: 8px;
+        }
+
+        .tag-pill {
+            background: #e0f2fe;
+            color: #0369a1;
+            font-size: 10.5px;
+            padding: 2px 7px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .badge-populer-embed {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: #ef4444;
+            color: #ffffff;
+            font-size: 10px;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Bar Informasi Identitas Mahasiswa UNPAM -->
+    <div class="identitas-bar">
+        <div class="container identitas-content">
+            <div>
+                <strong>Praktikum Pemrograman Web 1</strong> | Halaman Galeri Lengkap (Internal CSS Embedded)
+            </div>
+            <div>
+                Mahasiswa: <strong>Hadi Sulaiman</strong> | NIM: <strong>241011402572</strong> | Kelas: <strong>05TPLM003</strong>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigasi Utama -->
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <div class="brand-nama">
+                ✈ NusantaraVenture
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="destinasi.html" class="active">Galeri Destinasi</a></li>
+                <li><a href="kontak.html">Kontak &amp; Booking</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Konten Utama Galeri dengan Layout Dua Kolom -->
+    <main class="container layout-dua-kolom">
+
+        <!-- ================= KOLOM UTAMA (KIRI) ================= -->
+        <div class="kolom-utama">
+
+            <!-- Header Halaman Galeri -->
+            <div class="widget-box" style="border-left: 4px solid var(--primary-color);">
+                <!-- Judul Utama (font-size: 25px sesuai Digit ke-1: 5 * 5px) -->
+                <h1 class="judul-utama">Eksplorasi Galeri Destinasi Impian</h1>
+                <!-- Elemen Italic #1: Tagline -->
+                <p class="tagline-italic font-sistem-bersih" style="margin-top: 6px;">
+                    "Pilihan destinasi terbaik dari keindahan pulau terluar nusantara hingga pesona legendaris mancanegara."
+                </p>
+            </div>
+
+            <!-- Filter Kategori (Styling dari Internal CSS) -->
+            <div class="filter-kategori-container">
+                <span class="form-label-bold" style="display: flex; align-items: center; margin-right: 5px; font-size: 12.5px;">Kategori:</span>
+                <button class="filter-btn active">Semua Destinasi</button>
+                <button class="filter-btn">Wisata Bahari</button>
+                <button class="filter-btn">Pegunungan &amp; Alam</button>
+                <button class="filter-btn">Mancanegara</button>
+            </div>
+
+            <!-- Grid Galeri Destinasi Lengkap -->
+            <section class="destinasi-grid-lengkap">
+
+                <!-- Destinasi 1: Raja Ampat -->
+                <article class="kartu-destinasi border-utama-solid">
+                    <div class="destinasi-img-wrap">
+                        <img src="images/raja-ampat.jpg" alt="Raja Ampat" class="destinasi-img">
+                        <span class="badge-populer-embed">Best Seller</span>
+                        <span class="destinasi-badge">Bahari</span>
+                    </div>
+                    <div class="destinasi-body">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <h3 class="destinasi-nama">Kepulauan Raja Ampat</h3>
+                            <span class="rating-bintang">★ 4.9</span>
+                        </div>
+                        <!-- Elemen Italic #2: Lokasi Geografis -->
+                        <p class="lokasi-italic teks-kecil">&#128205; Papua Barat Daya</p>
+                        <!-- Perataan Teks Khusus: Text Justify -->
+                        <p class="teks-kecil text-justify-khusus" style="margin: 8px 0;">
+                            Nikmati panorama Wayag, Pianemo, serta pengalaman diving di perairan terumbu karang terpadat di dunia.
+                        </p>
+                        <div class="fasilitas-tags">
+                            <span class="tag-pill">Speedboat Pribadi</span>
+                            <span class="tag-pill">Resort Apung</span>
+                            <span class="tag-pill">Pemandu Snorkeling</span>
+                        </div>
+                        <div class="destinasi-footer">
+                            <div>
+                                <span class="teks-kecil" style="display: block;">Mulai dari</span>
+                                <span class="harga-angka">Rp 6.850.000</span>
+                            </div>
+                            <a href="kontak.html" class="btn-aksi">Booking</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Destinasi 2: Labuan Bajo -->
+                <article class="kartu-destinasi border-utama-solid">
+                    <div class="destinasi-img-wrap">
+                        <img src="images/labuan-bajo.jpg" alt="Labuan Bajo" class="destinasi-img">
+                        <span class="badge-populer-embed">Favorit</span>
+                        <span class="destinasi-badge">Liveaboard</span>
+                    </div>
+                    <div class="destinasi-body">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <h3 class="destinasi-nama">Taman Nasional Komodo</h3>
+                            <span class="rating-bintang">★ 4.8</span>
+                        </div>
+                        <p class="lokasi-italic teks-kecil">&#128205; Flores, NTT</p>
+                        <p class="teks-kecil text-justify-khusus" style="margin: 8px 0;">
+                            Trekking di puncak bukit Pulau Padar tiga warna pantai dan mengamati satwa purba komodo di habitat alaminya.
+                        </p>
+                        <div class="fasilitas-tags">
+                            <span class="tag-pill">Kapal Phinisi</span>
+                            <span class="tag-pill">Manta Point</span>
+                            <span class="tag-pill">Fullboard Meal</span>
+                        </div>
+                        <div class="destinasi-footer">
+                            <div>
+                                <span class="teks-kecil" style="display: block;">Mulai dari</span>
+                                <span class="harga-angka">Rp 4.950.000</span>
+                            </div>
+                            <a href="kontak.html" class="btn-aksi">Booking</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Destinasi 3: Gunung Bromo -->
+                <article class="kartu-destinasi">
+                    <div class="destinasi-img-wrap">
+                        <img src="images/bromo.jpg" alt="Gunung Bromo" class="destinasi-img">
+                        <span class="destinasi-badge">Gunung</span>
+                    </div>
+                    <div class="destinasi-body">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <h3 class="destinasi-nama">Sunrise Gunung Bromo</h3>
+                            <span class="rating-bintang">★ 4.8</span>
+                        </div>
+                        <p class="lokasi-italic teks-kecil">&#128205; Probolinggo, Jawa Timur</p>
+                        <p class="teks-kecil text-justify-khusus" style="margin: 8px 0;">
+                            Menatap fajar emas dari Bukit Cinta dan Penanjakan 1, dilanjutkan menjelajah kawah aktif dan bukit teletubbies.
+                        </p>
+                        <div class="fasilitas-tags">
+                            <span class="tag-pill">Jeep 4x4</span>
+                            <span class="tag-pill">Jaket Hangat</span>
+                            <span class="tag-pill">Kamera Dokumentasi</span>
+                        </div>
+                        <div class="destinasi-footer">
+                            <div>
+                                <span class="teks-kecil" style="display: block;">Mulai dari</span>
+                                <span class="harga-angka">Rp 1.450.000</span>
+                            </div>
+                            <a href="kontak.html" class="btn-aksi">Booking</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Destinasi 4: Kawah Ijen -->
+                <article class="kartu-destinasi">
+                    <div class="destinasi-img-wrap">
+                        <img src="images/kawah-ijen.jpg" alt="Kawah Ijen" class="destinasi-img">
+                        <span class="destinasi-badge">Fenomena Alam</span>
+                    </div>
+                    <div class="destinasi-body">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <h3 class="destinasi-nama">Blue Fire Kawah Ijen</h3>
+                            <span class="rating-bintang">★ 4.7</span>
+                        </div>
+                        <p class="lokasi-italic teks-kecil">&#128205; Banyuwangi, Jawa Timur</p>
+                        <p class="teks-kecil text-justify-khusus" style="margin: 8px 0;">
+                            Menyaksikan api biru abadi yang langka di dunia, danau kawah asam berwarna toska, serta hangatnya panorama pagi.
+                        </p>
+                        <div class="fasilitas-tags">
+                            <span class="tag-pill">Masker Gas Respirator</span>
+                            <span class="tag-pill">Pemandu Trekking</span>
+                        </div>
+                        <div class="destinasi-footer">
+                            <div>
+                                <span class="teks-kecil" style="display: block;">Mulai dari</span>
+                                <span class="harga-angka">Rp 1.150.000</span>
+                            </div>
+                            <a href="kontak.html" class="btn-aksi">Booking</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Destinasi 5: Nusa Penida -->
+                <article class="kartu-destinasi">
+                    <div class="destinasi-img-wrap">
+                        <img src="images/nusa-penida.jpg" alt="Nusa Penida" class="destinasi-img">
+                        <span class="destinasi-badge">Kepulauan</span>
+                    </div>
+                    <div class="destinasi-body">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <h3 class="destinasi-nama">Pesona Nusa Penida</h3>
+                            <span class="rating-bintang">★ 4.9</span>
+                        </div>
+                        <p class="lokasi-italic teks-kecil">&#128205; Klungkung, Bali</p>
+                        <p class="teks-kecil text-justify-khusus" style="margin: 8px 0;">
+                            Tur seharian ke Angel's Billabong, Broken Beach, Diamond Beach, dan panorama spektakuler tebing Kelingking.
+                        </p>
+                        <div class="fasilitas-tags">
+                            <span class="tag-pill">Tiket Fastboat PP</span>
+                            <span class="tag-pill">Mobil AC Pribadi</span>
+                        </div>
+                        <div class="destinasi-footer">
+                            <div>
+                                <span class="teks-kecil" style="display: block;">Mulai dari</span>
+                                <span class="harga-angka">Rp 1.250.000</span>
+                            </div>
+                            <a href="kontak.html" class="btn-aksi">Booking</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Destinasi 6: Cappadocia -->
+                <article class="kartu-destinasi">
+                    <div class="destinasi-img-wrap">
+                        <img src="images/cappadocia.jpg" alt="Cappadocia Balon Udara" class="destinasi-img">
+                        <span class="destinasi-badge">Internasional</span>
+                    </div>
+                    <div class="destinasi-body">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <h3 class="destinasi-nama">Balon Udara Cappadocia</h3>
+                            <span class="rating-bintang">★ 5.0</span>
+                        </div>
+                        <p class="lokasi-italic teks-kecil">&#128205; Anatolia Tengah, Turki</p>
+                        <p class="teks-kecil text-justify-khusus" style="margin: 8px 0;">
+                            Sensasi melayang di atas lembah batu peri dengan ratusan balon udara saat matahari terbit di negeri transkontinental.
+                        </p>
+                        <div class="fasilitas-tags">
+                            <span class="tag-pill">Cave Hotel 5★</span>
+                            <span class="tag-pill">Sertifikat Terbang</span>
+                        </div>
+                        <div class="destinasi-footer">
+                            <div>
+                                <span class="teks-kecil" style="display: block;">Mulai dari</span>
+                                <span class="harga-angka">Rp 19.800.000</span>
+                            </div>
+                            <a href="kontak.html" class="btn-aksi">Booking</a>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+
+        </div>
+
+        <!-- ================= KOLOM SIDEBAR (KANAN) ================= -->
+        <aside class="kolom-sidebar">
+
+            <!-- Filter Berdasarkan Rentang Harga -->
+            <div class="widget-box">
+                <h3 style="font-size: 15px; margin-bottom: 12px; border-bottom: 2px solid var(--border-color); padding-bottom: 6px;">
+                    Rentang Budget
+                </h3>
+                <div style="display: flex; flex-direction: column; gap: 8px; font-size: 13px;">
+                    <label><input type="checkbox" checked> &lt; Rp 2.000.000 (Domestik)</label>
+                    <label><input type="checkbox" checked> Rp 2.000.000 - Rp 7.000.000 (Eksotis)</label>
+                    <label><input type="checkbox"> &gt; Rp 15.000.000 (Mancanegara)</label>
+                </div>
+            </div>
+
+            <!-- Fasilitas Termasuk (Dua Jenis Border: Solid & Dashed) -->
+            <div class="border-promo-dashed">
+                <h3 style="font-size: 15px; color: #0d9488; margin-bottom: 8px;">
+                    Standar Layanan Kami
+                </h3>
+                <ul style="padding-left: 18px; font-size: 12.5px; line-height: 1.6; color: #334155;">
+                    <li>Asuransi perjalanan resmi selama tur</li>
+                    <li>Akomodasi hotel &amp; resort pilihan</li>
+                    <li>Transportasi darat dan laut ber-AC</li>
+                    <li>Pemandu lokal bersertifikat HPI</li>
+                </ul>
+                <!-- Elemen Italic #4: Catatan Khusus -->
+                <p class="catatan-italic" style="margin-top: 10px;">
+                    * Bebas biaya pembatalan hingga 7 hari sebelum jadwal keberangkatan.
+                </p>
+            </div>
+
+            <!-- Kutipan Petualang -->
+            <div class="quote-italic">
+                "Dunia adalah sebuah buku, dan mereka yang tidak melakukan perjalanan hanya membaca satu halaman saja."
+            </div>
+
+            <!-- Card Bantuan -->
+            <div class="border-info-dotted text-center-khusus">
+                <h4 style="color: #b45309; margin-bottom: 4px;">Butuh Bantuan Memilih?</h4>
+                <p class="teks-kecil" style="margin-bottom: 10px;">
+                    Konsultan perjalanan kami siap membantu menentukan paket terbaik sesuai preferensi Anda.
+                </p>
+                <a href="kontak.html" class="btn-aksi" style="padding: 6px 14px; font-size: 12px;">Chat WhatsApp</a>
+            </div>
+
+        </aside>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                &copy; 2026 NusantaraVenture - Tugas Pemrograman Web 1 | Dikembangkan oleh <strong>Hadi Sulaiman (NIM: 241011402572)</strong> Kelas 05TPLM003 Universitas Pamulang.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
