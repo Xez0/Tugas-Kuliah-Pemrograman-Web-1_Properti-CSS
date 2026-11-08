@@ -95,3 +95,396 @@ h3.destinasi-nama {
     font-family: var(--font-tambahan-2); /* Variasi Font Tambahan #2: Monospace */
 }
 
+/* ── 5. ATURAN FONT-WEIGHT (Minimal 5 elemen teks bold sesuai Digit ke-3 = 5) ── */
+/* Elemen Bold #1: Brand Logo */
+.brand-nama {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--primary-color);
+    letter-spacing: -0.5px;
+}
+
+/* Elemen Bold #2: Judul Utama */
+.judul-utama {
+    font-weight: 700;
+}
+
+/* Elemen Bold #3: Nama Destinasi di Kartu */
+.destinasi-nama {
+    font-weight: 600;
+}
+
+/* Elemen Bold #4: Harga Paket */
+.harga-angka {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--primary-dark);
+}
+
+/* Elemen Bold #5: Tombol Aksi */
+.btn-aksi {
+    font-weight: 600;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-aksi:hover {
+    background-color: var(--primary-dark);
+}
+
+/* Elemen Bold Tambahan #6: Label Form & Badge */
+.form-label-bold {
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+/* ── 6. ATURAN FONT-STYLE (Minimal 7 elemen teks italic sesuai Digit ke-4 = 7) ── */
+/* Elemen Italic #1: Tagline Header */
+.tagline-italic {
+    font-style: italic;
+    color: var(--text-muted);
+}
+
+/* Elemen Italic #2: Lokasi Geografis Destinasi */
+.lokasi-italic {
+    font-style: italic;
+    color: var(--primary-color);
+}
+
+/* Elemen Italic #3: Kutipan Wisatawan / Quote */
+.quote-italic {
+    font-style: italic;
+    color: #334155;
+    background: #f1f5f9;
+    padding: 10px 15px;
+    border-left: 4px solid var(--accent-warm);
+    margin: 10px 0;
+}
+
+/* Elemen Italic #4: Catatan Khusus Perjalanan */
+.catatan-italic {
+    font-style: italic;
+    font-size: 12px;
+    color: #64748b;
+}
+
+/* Elemen Italic #5: Testimoni Pengunjung */
+.testimoni-italic {
+    font-style: italic;
+    color: #475569;
+}
+
+/* Elemen Italic #6: Keterangan Fasilitas / Term */
+.fasilitas-italic {
+    font-style: italic;
+    font-size: 11px;
+    color: #0d9488;
+}
+
+/* Elemen Italic #7: Motto / Slogan Footer */
+.footer-motto-italic {
+    font-style: italic;
+    color: #94a3b8;
+}
+
+/* Elemen Italic Tambahan #8: Status Review */
+.review-waktu-italic {
+    font-style: italic;
+    font-size: 11px;
+    color: #94a3b8;
+}
+
+/* ── 7. ATURAN TEXT-ALIGN (Minimal 2 jenis perataan, 2 elemen perataan khusus sesuai Digit ke-5 = 2) ── */
+/* Perataan Standar: Left */
+.text-left {
+    text-align: left;
+}
+
+/* Elemen Perataan Khusus #1: Text Center */
+.text-center-khusus {
+    text-align: center;
+}
+
+/* Elemen Perataan Khusus #2: Text Justify */
+.text-justify-khusus {
+    text-align: justify;
+}
+
+/* Elemen Perataan Khusus Tambahan #3: Text Right */
+.text-right-khusus {
+    text-align: right;
+}
+
+/* ── 8. ATURAN MARGIN (Margin Utama = 5 * 5px = 25px sesuai Digit ke-1) ── */
+.margin-utama {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.seksi-margin {
+    margin-bottom: 25px;            /* Jarak antarbagian halaman = 25px */
+}
+
+.banner-promo-margin {
+    margin: 25px 0;
+}
+
+/* ── 9. ATURAN BORDER (Minimal 2 jenis border berbeda, Border Utama = 2px sesuai Digit ke-2) ── */
+/* Border Jenis #1: Border Solid 2px (Border Utama) */
+.border-utama-solid {
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+}
+
+.kartu-destinasi {
+    background: var(--bg-white);
+    border: 2px solid #e2e8f0;      /* Border solid default */
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.kartu-destinasi:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+/* Border Jenis #2: Border Dashed 2px (Kotak Voucher/Promo) */
+.border-promo-dashed {
+    border: 2px dashed var(--accent-color);
+    background-color: #f0fdfa;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+/* Border Jenis Tambahan #3: Border Dotted 2px */
+.border-info-dotted {
+    border: 2px dotted #f59e0b;
+    background-color: #fffbeb;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+/* ── 10. LAYOUT UTAMA: DUA KOLOM (Sesuai Digit Terakhir NIM = 2) ── */
+.navbar {
+    background-color: var(--bg-white);
+    border-bottom: 1px solid var(--border-color);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.container {
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--primary-color);
+}
+
+/* Grid Layout Dua Kolom */
+.layout-dua-kolom {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Kolom 1 (Konten Utama) : Kolom 2 (Sidebar) */
+    gap: 25px;                      /* Sesuai margin/gap 25px */
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.kolom-utama {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.kolom-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Widget Sidebar */
+.widget-box {
+    background: var(--bg-white);
+    padding: 18px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+/* ── 11. TANTANGAN TEMA: GALERI DESTINASI (Sesuai Digit Terakhir NIM = 2) ── */
+.galeri-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.destinasi-img-wrap {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    position: relative;
+}
+
+.destinasi-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.kartu-destinasi:hover .destinasi-img {
+    transform: scale(1.05);
+}
+
+.destinasi-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(15, 23, 42, 0.8);
+    color: #ffffff;
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+.destinasi-body {
+    padding: 15px;
+}
+
+.destinasi-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px solid var(--border-color);
+}
+
+/* Hero Section */
+.hero-banner {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #ffffff;
+    padding: 40px 30px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 25px;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(135deg, rgba(2, 132, 199, 0.85), rgba(15, 23, 42, 0.75));
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    color: #e2e8f0;
+    margin-bottom: 18px;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-family: var(--font-utama);
+    font-size: 13px;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+/* Identitas Mahasiswa Bar */
+.identitas-bar {
+    background: #0f172a;
+    color: #cbd5e1;
+    font-size: 11.5px;
+    padding: 8px 0;
+    border-bottom: 1px solid #1e293b;
+}
+
+.identitas-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Footer */
+footer {
+    background: #0f172a;
+    color: #cbd5e1;
+    padding: 30px 0 20px 0;
+    margin-top: 40px;
+    border-top: 2px solid var(--primary-color);
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #1e293b;
+    padding-top: 15px;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+/* Responsif Mobile */
+@media (max-width: 768px) {
+    .layout-dua-kolom {
+        grid-template-columns: 1fr;
+    }
+}
