@@ -1,0 +1,49 @@
+/* ==========================================================================
+   TUGAS PEMROGRAMAN WEB 1 - PRAKTIKUM CSS
+   Identitas Mahasiswa:
+   - Nama         : Hadi Sulaiman
+   - NIM          : 241011402572
+   - Kelas        : 05TPLM003
+   - Digit Terakhir: 2 (Tema: Travel Wisata | Layout: Dua Kolom | Tantangan: Galeri Destinasi)
+   - 5 Digit Akhir : 0, 2, 5, 7, 2 (Angka 0 diganti 5 -> 5, 2, 5, 7, 2)
+     * Digit ke-1 (5) : font-size judul utama = 5 * 5px = 25px | Margin utama = 5 * 5px = 25px
+     * Digit ke-2 (2) : Variasi font tambahan = 2 (Total 4 font) | Ketebalan border utama = 2px
+     * Digit ke-3 (5) : Minimal 5 elemen teks bold
+     * Digit ke-4 (7) : Minimal 7 elemen teks italic
+     * Digit ke-5 (2) : Minimal 2 elemen perataan teks khusus
+   ========================================================================== */
+
+/* ── 1. IMPORT GOOGLE FONTS (Variasi Font Sesuai Ketentuan NIM) ── */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+/* ── 2. RESET DAN VARIABEL CSS ── */
+:root {
+    --primary-color: #0284c7;       /* Sky Blue */
+    --primary-dark: #0369a1;
+    --accent-color: #0d9488;        /* Teal */
+    --accent-warm: #f59e0b;         /* Amber */
+    --text-dark: #0f172a;           /* Slate 900 */
+    --text-muted: #475569;          /* Slate 600 */
+    --bg-light: #f8fafc;            /* Slate 50 */
+    --bg-white: #ffffff;
+    --border-color: #e2e8f0;
+    --font-utama: 'Poppins', sans-serif;
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-tambahan-1: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-tambahan-2: 'Courier New', Courier, monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-utama);
+    font-size: 14px;                /* Ukuran font teks isi (Ukuran #1) */
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+}
+
