@@ -47,3 +47,51 @@ body {
     background-color: var(--bg-light);
 }
 
+/* ── 3. ATURAN FONT-SIZE (Minimal 3 ukuran teks berbeda, Judul Utama = 25px) ── */
+h1.judul-utama {
+    font-size: 25px;                /* Sesuai Digit ke-1: 5 * 5px = 25px */
+    font-family: var(--font-heading);
+    color: var(--primary-dark);
+    line-height: 1.3;
+}
+
+h2.judul-seksi {
+    font-size: 18px;                /* Ukuran font heading seksi (Ukuran #2) */
+    font-family: var(--font-heading);
+    color: var(--text-dark);
+    margin-bottom: 12px;
+}
+
+h3.destinasi-nama {
+    font-size: 16px;                /* Ukuran font nama kartu destinasi */
+    font-family: var(--font-utama);
+    color: var(--text-dark);
+}
+
+.teks-kecil {
+    font-size: 12px;                /* Ukuran font metadata / badge (Ukuran #3) */
+    color: var(--text-muted);
+}
+
+.teks-tiket-voucher {
+    font-size: 13px;
+    font-family: var(--font-tambahan-2); /* Variasi Font Tambahan #2: Monospace */
+}
+
+/* ── 4. ATURAN FONT-FAMILY (Minimal 2 font + 2 variasi tambahan = 4 font) ── */
+.font-serif-elegan {
+    font-family: var(--font-heading);
+}
+
+.font-sans-modern {
+    font-family: var(--font-utama);
+}
+
+.font-sistem-bersih {
+    font-family: var(--font-tambahan-1); /* Variasi Font Tambahan #1: Segoe UI */
+}
+
+.font-kode-voucher {
+    font-family: var(--font-tambahan-2); /* Variasi Font Tambahan #2: Monospace */
+}
+
