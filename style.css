@@ -14,23 +14,28 @@
    - Tantangan        : Galeri Destinasi dengan Filter & Kartu Interaktif
 
    KETENTUAN 5 DIGIT TERAKHIR NIM (0, 2, 5, 7, 2 -> Angka 0 diubah ke 5 -> 5, 2, 5, 7, 2):
-   1. FONT-SIZE   : Min 3 ukuran teks berbeda
-                    Judul Utama = Digit 1 * 5px = 25px
+   1. FONT-SIZE   : Min 3 ukuran berbeda | Judul utama = Digit 1 * 5px = 25px
                     (Diterapkan: 25px, 18px, 14px, 12px)
    2. FONT-FAMILY : Min 2 font dasar + Digit 2 variasi tambahan = 4 Jenis Font
                     (Diterapkan: Poppins, Playfair Display, Segoe UI, Courier New)
-   3. FONT-WEIGHT : Membedakan ketebalan judul & isi, Min Digit 3 elemen bold = 5 Elemen
-                    (Diterapkan: .brand-nama, .judul-utama, .destinasi-nama, .harga-angka, .btn-aksi)
-   4. FONT-STYLE  : Menggunakan normal & italic, Min Digit 4 elemen italic = 7 Elemen
-                    (Diterapkan: .tagline-italic, .lokasi-italic, .quote-italic, .catatan-italic,
-                     .testimoni-italic, .fasilitas-italic, .footer-motto-italic)
-   5. TEXT-ALIGN  : Min 2 jenis perataan, Min Digit 5 elemen perataan khusus = 2 Elemen
-                    (Diterapkan: Center pada Hero/Heading, Justify pada Artikel, Right pada Metadata)
-   6. MARGIN      : Mengatur jarak antarbagian, Margin utama = Digit 1 * 5px = 25px
+   3. FONT-WEIGHT : Membedakan ketebalan judul & isi | Min Digit 3 elemen bold = 5 Elemen
+                    - Ketebalan Isi  : font-weight: normal; (body)
+                    - Ketebalan Judul: font-weight: bold;
+                    - 5 Elemen Bold  : .brand-nama, .judul-utama, .destinasi-nama,
+                                       .harga-angka, .btn-aksi
+   4. FONT-STYLE  : Menggunakan normal & italic | Min Digit 4 elemen italic = 7 Elemen
+                    - Gaya Standar   : font-style: normal; (body)
+                    - 7 Elemen Italic: .tagline-italic, .lokasi-italic, .quote-italic,
+                                       .catatan-italic, .testimoni-italic,
+                                       .fasilitas-italic, .footer-motto-italic
+   5. TEXT-ALIGN  : Min 2 jenis perataan | Min Digit 5 elemen perataan khusus = 2 Elemen
+                    - Perataan Normal: text-align: left; (body)
+                    - 2 Elemen Khusus: .text-center-khusus (Center), .text-justify-khusus (Justify)
+   6. MARGIN      : Mengatur jarak antarbagian | Margin utama = Digit 1 * 5px = 25px
                     (Diterapkan: margin 25px 0 dan grid gap 25px)
-   7. BORDER      : Min 2 jenis border berbeda, Ketebalan border utama = Digit 2 px = 2px
-                    (Diterapkan: 2px solid, 2px dashed, 2px dotted)
-   8. METODE CSS  : External CSS (3 file HTML: index.html, destinasi.html, kontak.html)
+   7. BORDER      : Min 2 jenis border berbeda | Ketebalan border utama = Digit 2 px = 2px
+                    (Diterapkan: 2px solid dan 2px dashed)
+   8. METODE CSS  : External CSS (style.css pada 3 file HTML: index, destinasi, kontak)
                     Internal CSS (embedding tag <style> pada destinasi.html)
                     Inline CSS (atribut style="..." pada minimal 2 elemen HTML)
    ========================================================================== */
@@ -67,6 +72,9 @@ body {
     line-height: 1.6;
     color: var(--text-dark);
     background-color: var(--bg-light);
+    font-weight: normal;            /* Ketebalan standar teks isi (Normal) */
+    font-style: normal;             /* Gaya standar teks isi (Normal) */
+    text-align: left;               /* Perataan teks standar isi (Left) */
 }
 
 /* ── 3. ATURAN FONT-SIZE (Minimal 3 ukuran teks berbeda, Judul Utama = 25px) ── */
@@ -117,35 +125,35 @@ h3.destinasi-nama {
     font-family: var(--font-tambahan-2); /* Variasi Font Tambahan #2: Monospace */
 }
 
-/* ── 5. ATURAN FONT-WEIGHT (Minimal 5 elemen teks bold sesuai Digit ke-3 = 5) ── */
-/* Elemen Bold #1: Brand Logo */
+/* ── 5. ATURAN FONT-WEIGHT (Membedakan Judul & Isi: Tepat 5 Elemen Bold Sesuai Digit ke-3 NIM = 5) ── */
+/* Elemen Bold #1: Brand Logo Navbar */
 .brand-nama {
-    font-weight: 700;
+    font-weight: bold;
     font-size: 20px;
     color: var(--primary-color);
     letter-spacing: -0.5px;
 }
 
-/* Elemen Bold #2: Judul Utama */
+/* Elemen Bold #2: Judul Utama Halaman */
 .judul-utama {
-    font-weight: 700;
+    font-weight: bold;
 }
 
-/* Elemen Bold #3: Nama Destinasi di Kartu */
+/* Elemen Bold #3: Nama Kartu Destinasi */
 .destinasi-nama {
-    font-weight: 600;
+    font-weight: bold;
 }
 
-/* Elemen Bold #4: Harga Paket */
+/* Elemen Bold #4: Nilai Harga Paket Wisata */
 .harga-angka {
-    font-weight: 700;
+    font-weight: bold;
     font-size: 16px;
     color: var(--primary-dark);
 }
 
-/* Elemen Bold #5: Tombol Aksi */
+/* Elemen Bold #5: Tombol Aksi dan Navigasi */
 .btn-aksi {
-    font-weight: 600;
+    font-weight: bold;
     display: inline-block;
     padding: 8px 16px;
     background-color: var(--primary-color);
@@ -161,13 +169,15 @@ h3.destinasi-nama {
     background-color: var(--primary-dark);
 }
 
-/* Elemen Bold Tambahan #6: Label Form & Badge */
-.form-label-bold {
-    font-weight: 600;
+/* Label Formulir & Elemen Tambahan Dibuat Bobot Standar */
+.form-label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
     color: var(--text-dark);
 }
 
-/* ── 6. ATURAN FONT-STYLE (Minimal 7 elemen teks italic sesuai Digit ke-4 = 7) ── */
+/* ── 6. ATURAN FONT-STYLE (Menggunakan Normal & Italic: Tepat 7 Elemen Italic Sesuai Digit ke-4 NIM = 7) ── */
 /* Elemen Italic #1: Tagline Header */
 .tagline-italic {
     font-style: italic;
@@ -216,19 +226,7 @@ h3.destinasi-nama {
     color: #94a3b8;
 }
 
-/* Elemen Italic Tambahan #8: Status Review */
-.review-waktu-italic {
-    font-style: italic;
-    font-size: 11px;
-    color: #94a3b8;
-}
-
-/* ── 7. ATURAN TEXT-ALIGN (Minimal 2 jenis perataan, 2 elemen perataan khusus sesuai Digit ke-5 = 2) ── */
-/* Perataan Standar: Left */
-.text-left {
-    text-align: left;
-}
-
+/* ── 7. ATURAN TEXT-ALIGN (Minimal 2 Jenis Perataan: Tepat 2 Elemen Perataan Khusus Sesuai Digit ke-5 NIM = 2) ── */
 /* Elemen Perataan Khusus #1: Text Center */
 .text-center-khusus {
     text-align: center;
@@ -237,11 +235,6 @@ h3.destinasi-nama {
 /* Elemen Perataan Khusus #2: Text Justify */
 .text-justify-khusus {
     text-align: justify;
-}
-
-/* Elemen Perataan Khusus Tambahan #3: Text Right */
-.text-right-khusus {
-    text-align: right;
 }
 
 /* ── 8. ATURAN MARGIN (Margin Utama = 5 * 5px = 25px sesuai Digit ke-1) ── */
@@ -325,8 +318,7 @@ h3.destinasi-nama {
 .nav-links a {
     text-decoration: none;
     color: var(--text-dark);
-    font-weight: 500;
-    transition: color 0.2s;
+        transition: color 0.2s;
 }
 
 .nav-links a:hover, .nav-links a.active {
@@ -497,7 +489,6 @@ footer {
 }
 
 .footer-bottom {
-    text-align: center;
     border-top: 1px solid #1e293b;
     padding-top: 15px;
     margin-top: 20px;

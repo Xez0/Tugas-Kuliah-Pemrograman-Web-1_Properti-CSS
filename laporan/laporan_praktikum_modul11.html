@@ -463,17 +463,17 @@ li {
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: var(--font-utama); font-size: 14px; line-height: 1.6; color: var(--text-dark); background-color: #f8fafc; }
 /* 1. Aturan Font-Size (Judul Utama = 5 * 5px = 25px sesuai Digit 1 NIM) */
-h1.judul-utama { font-size: 25px; font-family: var(--font-heading); color: var(--primary-dark); font-weight: 700; }
+h1.judul-utama { font-size: 25px; font-family: var(--font-heading); color: var(--primary-dark); font-weight: bold; }
 h2.judul-seksi { font-size: 18px; font-family: var(--font-heading); margin-bottom: 12px; }
 .teks-kecil { font-size: 12px; color: var(--text-muted); }
 /* 2. Aturan Font-Family (4 Font Families: Poppins, Playfair Display, Segoe UI, Courier New) */
 .font-sistem-bersih { font-family: var(--font-tambahan-1); }
 .font-kode-voucher { font-family: var(--font-tambahan-2); font-size: 13px; }
 /* 3. Aturan Font-Weight (Minimal 5 Elemen Bold: Brand, Judul, Kartu, Harga, Tombol) */
-.brand-nama { font-weight: 700; font-size: 20px; color: var(--primary-color); }
-.destinasi-nama { font-weight: 600; font-size: 16px; }
-.harga-angka { font-weight: 700; font-size: 16px; color: var(--primary-dark); }
-.btn-aksi { font-weight: 600; padding: 8px 16px; background: var(--primary-color); color: #fff; border-radius: 6px; }
+.brand-nama { font-weight: bold; font-size: 20px; color: var(--primary-color); }
+.destinasi-nama { font-weight: bold; font-size: 16px; }
+.harga-angka { font-weight: bold; font-size: 16px; color: var(--primary-dark); }
+.btn-aksi { font-weight: bold; padding: 8px 16px; background: var(--primary-color); color: #fff; border-radius: 6px; }
 /* 4. Aturan Font-Style (Minimal 7 Elemen Italic) */
 .tagline-italic { font-style: italic; color: #38bdf8; }
 .deskripsi-singkat { font-style: italic; font-size: 13px; color: #475569; }
@@ -506,7 +506,7 @@ h2.judul-seksi { font-size: 18px; font-family: var(--font-heading); margin-botto
     &lt;div class="kolom-utama"&gt;
         &lt;section class="hero-banner"&gt;
             &lt;!-- 3. METODE INLINE CSS ELEMEN #1: Badge Promo --&gt;
-            &lt;span style="background-color: #fef08a; color: #854d0e; padding: 4px 12px; border-radius: 20px; font-weight: 700; font-size: 11px;"&gt;&#9733; PROMO LIBURAN 2026&lt;/span&gt;
+            &lt;span style="background-color: #fef08a; color: #854d0e; padding: 4px 12px; border-radius: 20px;  font-size: 11px;"&gt;&#9733; PROMO LIBURAN 2026&lt;/span&gt;
             &lt;h1 class="judul-utama" style="color: #ffffff;"&gt;Jelajahi Surga Bahari dan Pegunungan Nusantara&lt;/h1&gt;
             &lt;p class="tagline-italic font-sistem-bersih"&gt;"Menghadirkan kenyamanan perjalanan premium ke alam terindah Indonesia."&lt;/p&gt;
         &lt;/section&gt;
@@ -519,7 +519,7 @@ h2.judul-seksi { font-size: 18px; font-family: var(--font-heading); margin-botto
             &lt;p class="deskripsi-singkat"&gt;Gunakan kode voucher saat reservasi online.&lt;/p&gt;
         &lt;/div&gt;
         &lt;div class="info-sidebar"&gt;
-            &lt;h3 style="font-size: 14px; font-weight: 700;"&gt;Informasi Layanan Tur&lt;/h3&gt;
+            &lt;h3 style="font-size: 14px; "&gt;Informasi Layanan Tur&lt;/h3&gt;
             &lt;p class="teks-kecil" style="text-align: justify;"&gt;Layanan pemandu wisata berlisensi resmi, paket dokumentasi drone, dan transportasi VIP ber-AC.&lt;/p&gt;
         &lt;/div&gt;
     &lt;/aside&gt;
@@ -542,10 +542,10 @@ h2.judul-seksi { font-size: 18px; font-family: var(--font-heading); margin-botto
 &lt;!-- 2. METODE EMBEDDING (INTERNAL CSS DALAM TAG STYLE DI HEAD) --&gt;
 &lt;style&gt;
     .filter-kategori-container { display: flex; gap: 10px; margin-bottom: 20px; padding: 12px; background: #fff; border-radius: 8px; border: 1px solid #e2e8f0; }
-    .filter-btn { padding: 6px 14px; font-size: 12px; border-radius: 20px; border: 1px solid #cbd5e1; background: #f8fafc; cursor: pointer; font-weight: 500; transition: all 0.2s ease; }
+    .filter-btn { padding: 6px 14px; font-size: 12px; border-radius: 20px; border: 1px solid #cbd5e1; background: #f8fafc; cursor: pointer;  transition: all 0.2s ease; }
     .filter-btn.active, .filter-btn:hover { background: var(--primary-color); color: #fff; border-color: var(--primary-color); }
     .destinasi-grid-lengkap { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
-    .rating-bintang { color: #eab308; font-size: 13px; font-weight: 700; }
+    .rating-bintang { color: #eab308; font-size: 13px;  }
     /* Mix Border Demonstrasi pada Kartu Spesial */
     .border-mix-destinasi { border-width: 3px; border-style: dotted dashed solid double; border-color: #0284c7 #0d9488 #f59e0b #6366f1; }
 &lt;/style&gt;&lt;/head&gt;
@@ -592,11 +592,11 @@ h2.judul-seksi { font-size: 18px; font-family: var(--font-heading); margin-botto
             &lt;form action="#" method="POST"&gt;
                 &lt;div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 12px;"&gt;
                     &lt;div class="form-group"&gt;
-                        &lt;label class="form-label-bold"&gt;Nama Lengkap Pemesan:&lt;/label&gt;
+                        &lt;label class="form-label"&gt;Nama Lengkap Pemesan:&lt;/label&gt;
                         &lt;input type="text" class="form-control" placeholder="Contoh: Hadi Sulaiman" required&gt;
                     &lt;/div&gt;
                     &lt;div class="form-group"&gt;
-                        &lt;label class="form-label-bold"&gt;Alamat Email Aktif:&lt;/label&gt;
+                        &lt;label class="form-label"&gt;Alamat Email Aktif:&lt;/label&gt;
                         &lt;input type="email" class="form-control" placeholder="nama@domain.com" required&gt;
                     &lt;/div&gt;
                 &lt;/div&gt;
@@ -607,7 +607,7 @@ h2.judul-seksi { font-size: 18px; font-family: var(--font-heading); margin-botto
     &lt;!-- KOLOM KANAN: SIDEBAR DETAIL KANTOR --&gt;
     &lt;aside class="kolom-sidebar"&gt;
         &lt;div class="info-sidebar"&gt;
-            &lt;h3 style="font-size: 15px; font-weight: 700; color: #0284c7;"&gt;Kantor Pusat Operasional&lt;/h3&gt;
+            &lt;h3 style="font-size: 15px;  color: #0284c7;"&gt;Kantor Pusat Operasional&lt;/h3&gt;
             &lt;p class="teks-kecil" style="margin-top: 8px;"&gt;Gedung Wisata Nusantara Lt. 5, Jl. Surya Kencana No. 1, Pamulang, Tangerang Selatan.&lt;/p&gt;
             &lt;p class="teks-kecil" style="text-align: right; margin-top: 15px; font-style: italic;"&gt;Layanan 24 Jam: travel@nusantaraventure.id&lt;/p&gt;
         &lt;/div&gt;
