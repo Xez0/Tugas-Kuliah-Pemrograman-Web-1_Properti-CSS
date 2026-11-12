@@ -1,16 +1,38 @@
 /* ==========================================================================
-   TUGAS PEMROGRAMAN WEB 1 - PRAKTIKUM CSS
-   Identitas Mahasiswa:
-   - Nama         : Hadi Sulaiman
-   - NIM          : 241011402572
-   - Kelas        : 05TPLM003
-   - Digit Terakhir: 2 (Tema: Travel Wisata | Layout: Dua Kolom | Tantangan: Galeri Destinasi)
-   - 5 Digit Akhir : 0, 2, 5, 7, 2 (Angka 0 diganti 5 -> 5, 2, 5, 7, 2)
-     * Digit ke-1 (5) : font-size judul utama = 5 * 5px = 25px | Margin utama = 5 * 5px = 25px
-     * Digit ke-2 (2) : Variasi font tambahan = 2 (Total 4 font) | Ketebalan border utama = 2px
-     * Digit ke-3 (5) : Minimal 5 elemen teks bold
-     * Digit ke-4 (7) : Minimal 7 elemen teks italic
-     * Digit ke-5 (2) : Minimal 2 elemen perataan teks khusus
+   TUGAS PEMROGRAMAN WEB 1 - PRAKTIKUM PROPERTI CSS (MODUL XI)
+   ==========================================================================
+   IDENTITAS MAHASISWA:
+   - Nama        : Hadi Sulaiman
+   - NIM         : 241011402572
+   - Kelas       : 05TPLM003
+   - Mata Kuliah : Pemrograman Web 1
+   - Kampus      : Universitas Pamulang (UNPAM)
+
+   KETENTUAN DIGIT TERAKHIR NIM (Digit = 2):
+   - Tema Website     : Travel Wisata (NusantaraVenture)
+   - Tata Letak Layout: Dua Kolom (Two-Column Layout: 2.2fr : 1fr)
+   - Tantangan        : Galeri Destinasi dengan Filter & Kartu Interaktif
+
+   KETENTUAN 5 DIGIT TERAKHIR NIM (0, 2, 5, 7, 2 -> Angka 0 diubah ke 5 -> 5, 2, 5, 7, 2):
+   1. FONT-SIZE   : Min 3 ukuran teks berbeda
+                    Judul Utama = Digit 1 * 5px = 25px
+                    (Diterapkan: 25px, 18px, 14px, 12px)
+   2. FONT-FAMILY : Min 2 font dasar + Digit 2 variasi tambahan = 4 Jenis Font
+                    (Diterapkan: Poppins, Playfair Display, Segoe UI, Courier New)
+   3. FONT-WEIGHT : Membedakan ketebalan judul & isi, Min Digit 3 elemen bold = 5 Elemen
+                    (Diterapkan: .brand-nama, .judul-utama, .destinasi-nama, .harga-angka, .btn-aksi)
+   4. FONT-STYLE  : Menggunakan normal & italic, Min Digit 4 elemen italic = 7 Elemen
+                    (Diterapkan: .tagline-italic, .lokasi-italic, .quote-italic, .catatan-italic,
+                     .testimoni-italic, .fasilitas-italic, .footer-motto-italic)
+   5. TEXT-ALIGN  : Min 2 jenis perataan, Min Digit 5 elemen perataan khusus = 2 Elemen
+                    (Diterapkan: Center pada Hero/Heading, Justify pada Artikel, Right pada Metadata)
+   6. MARGIN      : Mengatur jarak antarbagian, Margin utama = Digit 1 * 5px = 25px
+                    (Diterapkan: margin 25px 0 dan grid gap 25px)
+   7. BORDER      : Min 2 jenis border berbeda, Ketebalan border utama = Digit 2 px = 2px
+                    (Diterapkan: 2px solid, 2px dashed, 2px dotted)
+   8. METODE CSS  : External CSS (3 file HTML: index.html, destinasi.html, kontak.html)
+                    Internal CSS (embedding tag <style> pada destinasi.html)
+                    Inline CSS (atribut style="..." pada minimal 2 elemen HTML)
    ========================================================================== */
 
 /* ── 1. IMPORT GOOGLE FONTS (Variasi Font Sesuai Ketentuan NIM) ── */
